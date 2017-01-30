@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+    <!--
+        /!\ Pour toute question concernant mon code ou pour une demande de màj :
+
+            Vous pouvez me contacter par email ou par téléphone (attention numéro belge) :
+            Jean-Christophe LEPOT
+            jclepot@lepot.be
+            +32 475/51.13.99
+
+                 _   _____                                 _        _
+                | | / ____| ___   _ __    ___  ___  _ __  | |_     | |__    ___
+             _  | || |     / _ \ | '_ \  / __|/ _ \| '_ \ | __|    | '_ \  / _ \
+            | |_| || |____| (_) || | | || (__|  __/| |_) || |_     | |_) ||  __/
+            \____/  \_____|\___/ |_| |_| \___|\___|| .___/ \__| () |_.__/  \___|
+                                                | |
+                                                |_|                                            
+            En ligne à l'adresse :
+            http://jconcept.be/wild-circus/
+
+            Et sur GitHub :
+            https://github.com/JConcept/Wild-circus
+    
+    -->
+    <meta name="author" content="Lepot_Jean-Christophe">
+    <meta name="keywords" content="">
+    <meta name="description" content="The Wild Circus is a company founded in 1920 by the Wild family. We perform equestrian performances, acrobatics, dance and much more">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Wild circus</title>
+    <link rel="icon" href="./assets/img/favicon-min.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/home.css" type="text/css" title="design" media="all">   
+    <!-- Intégration de JQuery -->
+    <script type='text/javascript' src='./assets/js/jquery-3.1.1.min.js'></script>
+    <!-- Intégration d'un composant JQuery "Tosrus" :
+         http://jquerycards.com/ui/dialogs-lightboxes/jquery-tosrus/
+    --><!-- Utilisé par le composant Jquery "Tosrus" :
+            Permet l'exploitation du tactile (dragging/swiping/pinching) -->
+		<script type="text/javascript" src="http://cdn.jsdelivr.net/hammerjs/2.0.3/hammer.min.js"></script>
+
+		<!-- Insertion du composant Jquery "Tosrus" -->
+		<script type="text/javascript" src="http://jconcept.be/wild-circus/assets/TosRUs/dist/js/jquery.tosrus.all.min.js"></script>
+
+        <!-- Feuille de style pour faire fonctionner le composant Jquery "Tosrus" -->
+		<link type="text/css" media="all" rel="stylesheet" href="http://jconcept.be/wild-circus/assets/TosRUs/dist/css/jquery.tosrus.all.css" />
+
+        <!-- ONLINE version :
+		<script type="text/javascript" src="http://cdn.jsdelivr.net/hammerjs/2.0.3/hammer.min.js"></script>
+		<script type="text/javascript" src="http://tosrus.frebsite.nl/tosrus/js/jquery.tosrus.min.all.js"></script>
+        <link rel="stylesheet" type="text/css" media="all" href="http://tosrus.frebsite.nl/tosrus/css/jquery.tosrus.all.css">
+        -->
+    <!-- FIN de l'intégration du composant Jquery "Tosrus" --> 
+</head>
+
+<body itemscope itemtype="http://schema.org/">
+    
+    <header id="header-top">
+        <h1 role="heading" aria-level="1" class="hidden">Wild circus</h1>
+        <div class="content-header">
+            <img src="./assets/img/wild-circus-logo-min.png" id="logo" alt="logo de la wild circus">
+            <!-- <select id="nav-menu">
+                <option value="1">FLAM'N'CO DIABOLO</option>
+                <option value="2">The equestrian show</option>
+            </select>
+            <nav id="nav-menu">
+                <h2 role="heading" aria-level="2" class="hidden">Naviguer vers</h2>
+                <ul>
+                    <li><a href="#fire">FLAM'N'CO DIABOLO</a></li>
+                    <li><a href="#equestrian">The equestrian show</a></li>
+                    <li><a href="#dance">Adelina Diane</a></li>
+                    <li><a href="#acrobat">The acrobats</a></li>
+                    <li><a href="#lion">The great lions</a></li>
+                </ul>
+                <button>Menu</button>
+            </nav> -->
+            <div class="header-decoration"></div>
+            
+        </div>
+    </header>
+    <section id="banner-video">
+        <h2 role="heading" aria-level="2" class="hidden">Video</h2>
+        <div class="video-pattern"></div>
+        <video loop="loop" autoplay="autoplay" class="banner-video" poster="./assets/img/fire-min.png" id="video1"> <!-- -->
+            <source src="./assets/video/fire.webm" type="video/webm">
+            <source src="./assets/video/fire.ogv" type="video/ogg">
+            <source src="./assets/video/fire.mp4" type="video/mp4">
+        </video>
+    </section>
+    <div id="links">
+        <section id="fire">
+            <h2 role="heading" aria-level="2" class="content">FLAM'N'CO DIABOLO</h2>
+            <p>
+                The entry of the Flam'n Co troupe on flamenco rhythms will enchant you. The Chinese diabolo or yo-yo is a child's play that moves into an artistic form. With a skillful precision, the diabolos are turned, thrown and thrown all around the body, which makes them almost animated. The two dance together. An evolution that intensifies crescendo, a universe in which mix scenic choreography and agility. The two protagonists of this issue are French: Jean and Morgane.
+            </p>
+            <figure>
+                <a href="./assets/img/fire-min.jpg">
+                    <img src="./assets/img/fire-min.jpg" alt="a fire-breathing men" class="img" width="6480" height="4320" data-width="6480" data-height="4320">
+                </a>
+            </figure>
+        </section>
+
+        <section id="dance">
+            <h2 role="heading" aria-level="2" class="content">Adelina Diane</h2>
+            <p>
+                From the stage of the famous show the biggest cabaret of the world to the trail of the Wild circus there is a step that crosses many artists, in particular this Italian duo. They propose beautiful evolutions combining tango and hulla-hoop playing between lightness and atypical rhythm, a beautiful universe evocative and poetic.
+            </p>
+            <p>
+                Get ready for an exotic moment, this duo is going to bluff more than one on frantic rhythms with the colors of the world they handle choreography, magic, theatrical techniques and special effects that they restore in a breathtaking performance of virtuosity, mastery of the Gestures and whose aesthetic invites to the escape of the senses...
+            </p>
+            <figure>
+                <a href="./assets/img/dance-min.jpg">
+                    <img src="./assets/img/dance-min.jpg" alt="a woman dancing on a big stage" class="img" width="4928" height="3264" data-width="4928" data-height="3264">
+                </a>
+            </figure>
+        </section>
+
+        <section id="acrobat">
+            <h2 role="heading" aria-level="2" class="content">The acrobats of the company Navas</h2>
+            <p>
+                Jumps more perilous than the others and even triple perilous jumps&nbsp;! The troop of Navas, young prodigies Franco-Ecuadorian make human pyramides and trampoline until you take your breath away&nbsp;!
+            </p>
+            <figure>
+                <a href="./assets/img/acrobats-min.jpg">
+                    <img src="./assets/img/acrobats-min.jpg" alt="human pyramid" class="img" width="4915" height="3255" data-width="4915" data-height="3255">
+                </a>
+            </figure>
+        </section>
+
+        <section id="equestrian">
+            <h2 role="heading" aria-level="2" class="content">The equestrian show &laquo; They shoot angels, don’t they&nbsp;? &raquo; <em>(elegies)</em></h2>
+            <p>
+                In a unique space–is it the bottom of a volcano&nbsp;?<br>
+                –&nbsp;Bartabas returns on stage and delivers us a fascinating equestrian and poetic musing. For this new creation, he comes down again in the arena like a archangel fallen from his purgatory.
+            </p>
+            <blockquote class="hidde">
+                Because here the sky of the angels announces of dry land and the surges aim to be cavalier. Even the paradise of horses is not an easy one anymore.<br>
+                To which messenger to dedicate itself, when the circle of hell does not stop being reversed and the seraphs in wings bashed up to reconquer their kingdom&nbsp;?<br>
+                In which star to trust when we walk on a thread over volcanoes&nbsp;?<br>
+                What assumption to believe when the punishment happens to the sound of church organs&nbsp;?
+            </blockquote>
+            <p>
+                With this new show, the thirteenth in thirty years, Wild circus pursues its indomitable, equestrian and poetic quest, in the unknown. The laughter often also ambles in this pit of chimeras reinvented each time, when whitefaced clowns looklike butchers stir on popular airs.
+            </p>
+            <figure>
+                <a href="./assets/img/horses-min.jpg">
+                    <img src="./assets/img/horses-min.jpg" alt="the equestrian show picture" class="img" width="2000" height="1332" data-width="2000" data-height="1332">
+                </a>
+            </figure>
+        </section>
+
+        <section id="lion">
+            <h2 role="heading" aria-level="2" class="content">The great lions</h2>
+            <p>
+                The great lions, are unanimously considered the most beautiful and majestic specimens on the track. In spite of a perceptible ferocity, they will awaken the emotion on the track! Note in the group Meknes and its 320kg, all trained and presented by Steve Falck.
+            </p>
+            <figure>
+                <a href="./assets/img/lion-min.jpg">
+                    <img src="./assets/img/lion-min.jpg" alt="an impressive lion" class="img" width="926" height="697" data-width="926" data-height="697">
+                </a>
+            </figure>
+        </section>
+    </div>
+
+    <footer id="footer">
+        <nav class="social">
+            <h2 role="heading" aria-level="2" class="hidden" id="social-share">Share</h2>
+            <ul>
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://jconcept.be/wild-circus/" class="fb">Facebook</a></li>
+                <li><a href="https://twitter.com/intent/tweet/?url=http://jconcept.be/wild-circus&text=Wild%20Circus%20is%20a%20..." class="t">Twitter</a></li>
+                <li><a href="mailto:?subject=Hey%20see%20this%20site%20of%20the%20Wild%20Circus&body=I%20have%20visited%20this%20site%20%3A%20http%3A%2F%2Fjconcept.be%2Fwild-circus%2F" class="mail">Email</a></li>
+            </ul>
+        </nav>
+        <section id="legal">
+            <h2 role="heading" aria-level="2" class="hidden">Legal informations</h2>
+            <address itemprop="address">
+                <strong itemscope="itemscope" itemtype="http://schema.org/PostalAddress">
+                    <span itemprop="streetAddress">Street fake</span>&nbsp;<!--
+                    --><span itemprop="postOfficeBoxNumber">001</span>,<br>
+                    <span itemprop="postalCode">10000 </span>&nbsp;
+                    <span itemprop="addressLocality">Pepergoath</span><br>
+                    <span itemprop="addressCountry">USA</span>
+                </strong>
+            </address>
+            <p>
+                Created by <a target="_blank" href="http://jconcept.be">JConcept.be</a><br>
+                <a href="https://github.com/JConcept/wild-circus">Repos GitHub</a> 
+            </p>
+            <p class="p-copy">
+                <span class="copy"></span><span class="hidden">&copy;</span>&nbsp;2017&nbsp;- <a target="_blank" href="http://jconcept.be">Privacy policy</a>
+            </p>
+        </section>
+    </footer>
+    <script type='text/javascript' src='./assets/js/script.js'></script>
+</body>
+
+</html>
